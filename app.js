@@ -45,9 +45,6 @@ const selectItem = (event, img) => {
   let item = sliders.indexOf(img);
   if (item === -1) {
     sliders.push(img);
-  }else{
-    sliders.pop(img);
-  }
 }
 var timer
 const createSlider = () => {
@@ -117,7 +114,7 @@ searchBtn.addEventListener('click', function () {
   const search = document.getElementById('search');
   getImages(search.value);
   sliders.length = 0;
-})
+});
 enterBtn.addEventListener('keypress', function (event) {
   if (event.keyCode === 13){
   document.querySelector('.main').style.display = 'none';
@@ -126,8 +123,8 @@ enterBtn.addEventListener('keypress', function (event) {
   getImages(search.value);
   sliders.length = 0;
   }
-})
+});
 
 sliderBtn.addEventListener('click', function () {
   createSlider()
-})
+})}
