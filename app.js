@@ -45,6 +45,9 @@ const selectItem = (event, img) => {
   let item = sliders.indexOf(img);
   if (item === -1) {
     sliders.push(img);
+}else{
+  alert("loaded");
+}
 }
 var timer
 const createSlider = () => {
@@ -127,4 +130,4 @@ enterBtn.addEventListener('keypress', function (event) {
 
 sliderBtn.addEventListener('click', function () {
   createSlider()
-})}
+})
